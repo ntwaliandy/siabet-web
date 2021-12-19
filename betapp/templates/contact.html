@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)http://iamubaidah.com/html/peredion/demo/contact.html -->
+<html lang="zxx"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        {% load static %}
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title> A peer to peer betting game</title>
+            <!-- favicon -->
+            <link rel="shortcut icon" href="{% static 'betapp/img/logo.png' %}" type="image/x-icon">
+            <!-- bootstrap -->
+            <link rel="stylesheet" href="{% static 'betapp/css/bootstrap.min.css' %}">
+            <!-- fontawesome icon  -->
+            <link rel="stylesheet" href="{% static 'betapp/css/fontawesome.min.css' %}">
+            <!-- flaticon css -->
+            <link rel="stylesheet" href="{% static 'betapp/fonts/flaticon.css' %}">
+            <!-- animate.css -->
+            <link rel="stylesheet" href="{% static 'betapp/css/animate.css' %}">
+            <!-- Owl Carousel -->
+            <link rel="stylesheet" href="{% static 'betapp/css/owl.carousel.min.css' %}">
+            <!-- magnific popup -->
+            <link rel="stylesheet" href="{% static 'betapp/css/magnific-popup.css' %}">
+            <link rel="stylesheet" href="{% static 'betapp/css/odometer.min.css' %}">
+            <!-- stylesheet -->
+            <link rel="stylesheet" href="{% static 'betapp/css/style.css' %}">
+            <!-- responsive -->
+            <link rel="stylesheet" href="{% static 'betapp/css/responsive.css' %}">
+        </head>
+
+    <body style="padding-right: 0px;">
+
+        <!-- preloader begin -->
+        <div class="preloader">
+            <img src="{% static 'betapp/img/preloader.gif' %}" alt="">
+            <span>SIABET LOADING</span>
+        </div>
+        <!-- preloader end -->
+        
+         <!-- header begin -->
+        <div class="header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-sm-6">
+                            <div class="left-area">
+                                <ul>
+                                    <li>
+                                        <span class="icon">
+                                            <i class="far fa-calendar-alt"></i>
+                                        </span>
+                                        <span class="text">
+                                            <span id="date"></span>
+                                            <span id="month"></span>
+                                            <span id="year"></span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="icon">
+                                            <i class="far fa-clock"></i>
+                                        </span>
+                                        <span class="text clocks">
+                                            <span id="hours"></span>:<span id="minutes"></span>:<span id="seconds"></span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-sm-6">
+                            <div class="right-area">
+                                <ul>
+                                    
+                                    <li>
+                                        <a class="link" href="#">
+                                            <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="user-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="svg-inline--fa fa-user-circle fa-w-16 fa-fw fa-2x"><path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm128 421.6c-35.9 26.5-80.1 42.4-128 42.4s-92.1-15.9-128-42.4V416c0-35.3 28.7-64 64-64 11.1 0 27.5 11.4 64 11.4 36.6 0 52.8-11.4 64-11.4 35.3 0 64 28.7 64 64v13.6zm30.6-27.5c-6.8-46.4-46.3-82.1-94.6-82.1-20.5 0-30.4 11.4-64 11.4S204.6 320 184 320c-48.3 0-87.8 35.7-94.6 82.1C53.9 363.6 32 312.4 32 256c0-119.1 96.9-216 216-216s216 96.9 216 216c0 56.4-21.9 107.6-57.4 146.1zM248 120c-48.6 0-88 39.4-88 88s39.4 88 88 88 88-39.4 88-88-39.4-88-88-88zm0 144c-30.9 0-56-25.1-56-56s25.1-56 56-56 56 25.1 56 56-25.1 56-56 56z" class=""></path></svg>
+                                            Hi, Andy250
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="navbar" class="header-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 d-xl-flex d-lg-flex d-block align-items-center">
+                            <div class="row">
+                                <div class="col-xl-12 col-lg-12 col-6 d-xl-block d-lg-block d-flex align-items-center">
+                                    <div class="logo">
+                                        <a href="/">
+                                            <img src="{% static 'betapp/img/logo.png' %}" alt="logo">
+                                        </a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-6 d-xl-none d-lg-none d-block">
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                        <i class="fas fa-bars"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-9">
+                            <div class="mainmenu">
+                                <nav class="navbar navbar-expand-lg">
+                                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                        <ul class="navbar-nav ml-auto">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="/">Home</a>
+                                                
+                                              </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  Category
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                                    <a class="dropdown-item" href="/suggest">Suggest</a>
+                                                    <a class="dropdown-item" href="/requests">Requests</a>
+                                                    <a class="dropdown-item" href="/board">Board</a>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="/about">About</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="/contact">Contact US</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="">Profile</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                  </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header end -->
+
+        <!-- breadcrumb begin -->
+        <div class="breadcrumb-bettix contact-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-7 col-lg-7">
+                        <div class="breadcrumb-content">
+                            <h2>Contact</h2>
+                            <ul>
+                                <li>
+                                    <a href="/">Home</a>
+                                </li>
+                                <li>
+                                    Contact
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- breadcrumb end -->
+
+        <!-- contact begin -->
+        <div class="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 col-lg-6 col-md-8">
+                        <div class="section-title">
+                            <h2>Get In Touch</h2>
+                            <p> siabet allows you to follow or unfollow other players, 
+                                once you follow another player then you will be updated about their topics, their bets and suggestions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-xl-8 col-lg-8 col-md-7">
+                        <div class="contact-form">
+                            <form>
+                                <div class="row">
+                                    <div class="col-xl-6 col-lg-6">
+                                        <label for="fullName">Full Name</label>
+                                        <input type="text" id="fullName" placeholder="Ex: Andy Green">
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6">
+                                        <label for="phoneNo">Phone No</label>
+                                        <input type="text" id="phoneNo" placeholder="+256 xxx xxx xxx">
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6">
+                                        <label for="emailAdd">Email</label>
+                                        <input type="text" id="emailAdd" placeholder="Ex: yourmail@do.main">
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6">
+                                        <label for="mailSubject">Subject</label>
+                                        <input type="text" id="mailSubject" placeholder="Ex: Services">
+                                    </div>
+                                </div>
+                                <label for="yourMessage">Subject</label>
+                                <textarea id="yourMessage" placeholder="Ex: Hello Admin!"></textarea>
+                                <button class="submit-btn">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-5">
+                        <div class="contact-information">
+                            <div class="about-site">
+                                
+                                <p>siabet is a peer to peer social betting application on Android and IOS for fun, friends and family</p>
+                            </div>
+                            <ul class="info-list">
+                                <li>
+                                    <span class="icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </span>
+                                    <span class="text">
+                                        Najjera 1
+                                    </span>
+                                </li>
+                                
+                                <li>
+                                    <span class="icon">
+                                        <i class="fas fa-phone"></i>
+                                    </span>
+                                    <span class="text">
+                                        +256 787 719 618
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="icon">
+                                        <i class="far fa-envelope"></i>
+                                    </span>
+                                    <span class="text">
+                                        info@siabet.org
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="icon">
+                                        <i class="fas fa-globe"></i>
+                                    </span>
+                                    <span class="text">
+                                        siabet.org
+                                    </span>
+                                </li>
+                            </ul>
+                            <ul class="social-link">
+                                <li>
+                                    <a href="https://twitter.com/SIABET5">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="maps">
+                <iframe src="./contact_files/embed.html"></iframe>
+            </div>
+        </div>
+        <!-- contact end -->
+
+        <!-- footer begin -->
+        <div class="footer" id="contact">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-xl-4 col-lg-5 col-md-10">
+                        <div class="about-widget">
+                            <a class="logo" href="">
+                                <img src="{% static 'betapp/img/logo.png' %}" alt="">
+                            </a>
+                            <p>The app allows you to choose a player for your one bet. You are in control of who to play with.</p>
+                            <div class="social">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="social-icon">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a href="https://twitter.com/SIABET5" class="social-icon">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="support">
+                                <ul>
+                                    <li>
+                                        <span class="icon">
+                                            <img src="{% static 'betapp/img/svg/email.svg' %}" alt="">
+                                        </span>
+                                        <span class="text">
+                                            <span class="title">Mail Us</span>
+                                            <a href="mailto:info@siabet.org"><span class="descr">info@siabet.org</span></a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="icon">
+                                            <img src="{% static 'betapp/img/svg/phone-call.svg' %}" alt="">
+                                        </span>
+                                        <span class="text">
+                                            <span class="title">Get In Touch</span>
+                                            <a href="tel:+256 787 719 618"><span class="descr">+256 787 719 618</span></a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="col-xl-2 col-lg-2 col-md-3">
+                        <div class="useful-links">
+                            <h3>All Sports</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">FOOTBALL</a>
+                                </li>
+                                <li>
+                                    <a href="#">TENNIS</a>
+                                </li>
+                                <li>
+                                    <a href="#">BASKETBALL</a>
+                                </li>
+                                <li>
+                                    <a href="#">ICE HOCKEY</a>
+                                </li>
+                                <li>
+                                    <a href="#">VOLLEYBALL</a>
+                                </li>
+                                <li>
+                                    <a href="#">BADMINTON</a>
+                                </li>
+                                <li>
+                                    <a href="#">BASEBALL</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- footer end -->
+        <!-- copyright footer begin -->
+        <div class="copyright-footer">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-xl-5 col-md-6 col-lg-6 d-lg-flex d-lg-flex d-block align-items-center">
+                        <p class="copyright-text">
+                            <a href="#">SIABET</a> © 2021. PRIVACY POLICY
+                        </p>
+                    </div>
+                    <div class="text-right col-md-6 col-xl-4 col-lg-6 d-xl-flex d-lg-flex d-block align-items-center">
+                        <p class="copyright-text">
+                            Powerd By <a href="">ANDY EVENTS</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- copyright footer end -->
+        <!-- jquery -->
+        <!-- <script src="assets/js/jquery.js"></script> -->
+        <script src="{% static 'betapp/js/jquery-3.4.1.min.js' %}"></script>
+        <!-- bootstrap -->
+        <script src="{% static 'betapp/js/bootstrap.min.js' %}"></script>
+        <!-- owl carousel -->
+        <script src="{% static 'betapp/js/owl.carousel.js' %}"></script>
+        <!-- magnific popup -->
+        <script src="{% static 'betapp/js/jquery.magnific-popup.js' %}"></script>
+        <!-- filterizr js -->
+        <script src="{% static 'betapp/js/jquery.filterizr.min.js' %}"></script>
+        <!-- wow js-->
+        <script src="{% static 'betapp/js/wow.min.js' %}"></script>
+        <!-- clock js -->
+        <script src="{% static 'betapp/js/clock.min.js' %}"></script>
+        <script src="{% static 'betapp/js/jquery.appear.min.js' %}"></script>
+        <script src="{% static 'betapp/js/odometer.min.js' %}"></script>
+        <script src="{% static 'betapp/js/oddometer-active.js' %}"></script>
+        <!-- main -->
+        <script src="{% static 'betapp/js/main.js' %}"></script>
+    
+</body></html>

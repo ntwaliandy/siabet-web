@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)http://iamubaidah.com/html/peredion/demo/login.html? -->
+<html lang="zxx"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    {% load static %}
+    <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> A peer to peer betting game</title>
+        <!-- favicon -->
+        <link rel="shortcut icon" href="{% static 'betapp/img/logo.png' %}" type="image/x-icon">
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="{% static 'betapp/css/bootstrap.min.css' %}">
+        <!-- fontawesome icon  -->
+        <link rel="stylesheet" href="{% static 'betapp/css/fontawesome.min.css' %}">
+        <!-- flaticon css -->
+        <link rel="stylesheet" href="{% static 'betapp/fonts/flaticon.css' %}">
+        <!-- animate.css -->
+        <link rel="stylesheet" href="{% static 'betapp/css/animate.css' %}">
+        <!-- Owl Carousel -->
+        <link rel="stylesheet" href="{% static 'betapp/css/owl.carousel.min.css' %}">
+        <!-- magnific popup -->
+        <link rel="stylesheet" href="{% static 'betapp/css/magnific-popup.css' %}">
+        <link rel="stylesheet" href="{% static 'betapp/css/odometer.min.css' %}">
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="{% static 'betapp/css/style.css' %}">
+        <!-- responsive -->
+        <link rel="stylesheet" href="{% static 'betapp/css/responsive.css' %}">
+    </head>
+    <body>
+        <!-- preloader begin -->
+        <div class="preloader">
+            <img src="{% static 'betapp/img/preloader.gif' %}" alt="">
+            <span>SIABET LOADING</span>
+        </div>
+        <!-- preloader end -->
+
+
+        
+
+
+
+        <!-- header begin -->
+        <div class="header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-sm-6">
+                            <div class="left-area">
+                                <ul>
+                                    <li>
+                                        <span class="icon">
+                                            <i class="far fa-calendar-alt"></i>
+                                        </span>
+                                        <span class="text">
+                                            <span id="date"></span>
+                                            <span id="month"></span>
+                                            <span id="year"></span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="icon">
+                                            <i class="far fa-clock"></i>
+                                        </span>
+                                        <span class="text clocks">
+                                            <span id="hours"></span>:<span id="minutes"></span>:<span id="seconds"></span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-sm-6">
+                            <div class="right-area">
+                                <ul>
+                                    <li>
+                                        <a class="link" href="/login">
+                                            <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="dolly" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-dolly fa-w-18 fa-fw fa-2x"><path fill="currentColor" d="M575.6 309.8l-5.1-15.2c-1.4-4.2-5.9-6.5-10.1-5.1L526 301.1 451.5 77.9c-2.7-8.1-8.4-14.7-16-18.5-7.7-3.8-16.3-4.4-24.4-1.7L176.3 136l-18-50.7C146.9 53.3 116.7 32 82.8 32H8c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h74.8c20.3 0 38.4 12.8 45.2 31.9l96.7 271.9c-23.3 17.2-37.2 46.5-31.4 78.9 5.6 31.3 30.4 57 61.5 63.5 51.7 10.7 97.2-28.4 97.2-78.2 0-13.1-3.4-25.2-9-36.1l227.5-76c4.2-1.4 6.5-5.9 5.1-10.1zM187 166.1l106.4-35.5 25 74.9c1.4 4.2 5.9 6.5 10.1 5.1l15.2-5.1c4.2-1.4 6.5-5.9 5.1-10.1l-25-74.9L421.2 88l74.5 223.3-174.4 58.1C307.6 358.7 290.7 352 272 352c-6.3 0-12.3.9-18.1 2.3L187 166.1zM272 480c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48z" class=""></path></svg>
+                                            Login
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a class="link" href="/register">
+                                            <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="dolly" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-dolly fa-w-18 fa-fw fa-2x"><path fill="currentColor" d="M575.6 309.8l-5.1-15.2c-1.4-4.2-5.9-6.5-10.1-5.1L526 301.1 451.5 77.9c-2.7-8.1-8.4-14.7-16-18.5-7.7-3.8-16.3-4.4-24.4-1.7L176.3 136l-18-50.7C146.9 53.3 116.7 32 82.8 32H8c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h74.8c20.3 0 38.4 12.8 45.2 31.9l96.7 271.9c-23.3 17.2-37.2 46.5-31.4 78.9 5.6 31.3 30.4 57 61.5 63.5 51.7 10.7 97.2-28.4 97.2-78.2 0-13.1-3.4-25.2-9-36.1l227.5-76c4.2-1.4 6.5-5.9 5.1-10.1zM187 166.1l106.4-35.5 25 74.9c1.4 4.2 5.9 6.5 10.1 5.1l15.2-5.1c4.2-1.4 6.5-5.9 5.1-10.1l-25-74.9L421.2 88l74.5 223.3-174.4 58.1C307.6 358.7 290.7 352 272 352c-6.3 0-12.3.9-18.1 2.3L187 166.1zM272 480c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48z" class=""></path></svg>
+                                            Register
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- header end -->
+
+        <!-- breadcrumb begin -->
+        <div class="breadcrumb-bettix register-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-7 col-lg-7">
+                        <div class="breadcrumb-content">
+                            <h2>Login</h2>
+                            <ul>
+                                <li>
+                                    <a href="/">Home</a>
+                                </li>
+                                <li>
+                                    Login
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- breadcrumb end -->
+
+        <!-- login begin -->
+        <div class="login">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 col-lg-6 col-md-8">
+                        <div class="section-title">
+                            <h2>Login To SiaBet</h2>
+                            <p>A peer to peer betting game.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-xl-5 col-lg-5 col-md-6">
+                        <div class="login-form">
+                            <form action="/">
+                                <input type="username" placeholder="Enter Your Username">
+                                <input type="password" placeholder="Enter Your Password">
+                                <button type="submit">Login</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- login end -->
+
+         <!-- footer begin -->
+        <div class="footer" id="contact">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-xl-4 col-lg-5 col-md-10">
+                        <div class="about-widget">
+                            <a class="logo" href="">
+                                <img src="{% static 'betapp/img/logo.png' %}" alt="">
+                            </a>
+                            <p>The app allows you to choose a player for your one bet. You are in control of who to play with.</p>
+                            <div class="social">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="social-icon">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a href="https://twitter.com/SIABET5" class="social-icon">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="support">
+                                <ul>
+                                    <li>
+                                        <span class="icon">
+                                            <img src="{% static 'betapp/img/svg/email.svg' %}" alt="">
+                                        </span>
+                                        <span class="text">
+                                            <span class="title">Mail Us</span>
+                                            <a href="mailto:info@siabet.org"><span class="descr">info@siabet.org</span></a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="icon">
+                                            <img src="{% static 'betapp/img/svg/phone-call.svg' %}" alt="">
+                                        </span>
+                                        <span class="text">
+                                            <span class="title">Get In Touch</span>
+                                            <a href="tel:+256 787 719 618"><span class="descr">+256 787 719 618</span></a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="col-xl-2 col-lg-2 col-md-3">
+                        <div class="useful-links">
+                            <h3>All Sports</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">FOOTBALL</a>
+                                </li>
+                                <li>
+                                    <a href="#">TENNIS</a>
+                                </li>
+                                <li>
+                                    <a href="#">BASKETBALL</a>
+                                </li>
+                                <li>
+                                    <a href="#">ICE HOCKEY</a>
+                                </li>
+                                <li>
+                                    <a href="#">VOLLEYBALL</a>
+                                </li>
+                                <li>
+                                    <a href="#">BADMINTON</a>
+                                </li>
+                                <li>
+                                    <a href="#">BASEBALL</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- footer end -->
+        <!-- copyright footer begin -->
+        <div class="copyright-footer">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-xl-5 col-md-6 col-lg-6 d-lg-flex d-lg-flex d-block align-items-center">
+                        <p class="copyright-text">
+                            <a href="#">SIABET</a> © 2021. PRIVACY POLICY
+                        </p>
+                    </div>
+                    <div class="text-right col-md-6 col-xl-4 col-lg-6 d-xl-flex d-lg-flex d-block align-items-center">
+                        <p class="copyright-text">
+                            Powerd By <a href="">ANDY EVENTS</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- copyright footer end -->
+        <!-- jquery -->
+        <!-- <script src="assets/js/jquery.js"></script> -->
+        <script src="{% static 'betapp/js/jquery-3.4.1.min.js' %}"></script>
+        <!-- bootstrap -->
+        <script src="{% static 'betapp/js/bootstrap.min.js' %}"></script>
+        <!-- owl carousel -->
+        <script src="{% static 'betapp/js/owl.carousel.js' %}"></script>
+        <!-- magnific popup -->
+        <script src="{% static 'betapp/js/jquery.magnific-popup.js' %}"></script>
+        <!-- filterizr js -->
+        <script src="{% static 'betapp/js/jquery.filterizr.min.js' %}"></script>
+        <!-- wow js-->
+        <script src="{% static 'betapp/js/wow.min.js' %}"></script>
+        <!-- clock js -->
+        <script src="{% static 'betapp/js/clock.min.js' %}"></script>
+        <script src="{% static 'betapp/js/jquery.appear.min.js' %}"></script>
+        <script src="{% static 'betapp/js/odometer.min.js' %}"></script>
+        <script src="{% static 'betapp/js/oddometer-active.js' %}"></script>
+        <!-- main -->
+        <script src="{% static 'betapp/js/main.js' %}"></script>
+    
+    </body>
+</html>
